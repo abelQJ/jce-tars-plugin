@@ -1,0 +1,87 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "jce",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+			{
+				"name":"invalid.illegal.jce",
+				"match":"\\b(module)\\b"
+			},
+			{
+				"name":"keyword.control.jce",
+				"match":"\\b(struct|enum)\\b"
+			},
+			{
+				"name":"invalid.deprecated.jce",
+				"match":"\\binterface\\b"
+			},
+			{
+				"name":"entity.other.attribute-name.jce",
+				"match":"\\b(optional|require)\\b"
+			},
+			{
+				"name":"keyword.other.jce",
+				"match":"\\b(key|out|const|map|vector)\\b"
+			},
+			{
+				"name":"storage.type.jce",
+				"match":"\\b(void|bool|byte|short|int|long|float|double|string|unsigned byte|unsigned short|unsigned int)\\b"
+			},
+			{
+				"name":"string.quoted.double.jce",
+				"match":"\\b[\"']([\\s\\S]*?)['\"]\\b"
+			},
+			{
+				"name":"invalid.illegal.jce",
+				"match":"\\b\\{([\\s\\S]*?)\\}\b"
+			},
+			{
+				"name":"comment.line.jce",
+				"match":"//([\\s\\S]*?)[\r\n]"
+			},
+			{
+				"name":"comment.block.jce",
+				"begin":"/\\*",
+				"end":"\\*/"
+			},
+			{
+				"name":"entity.name.type.jce",
+				"match":"&lt;([A-Za-z][A-Za-z0-9]*)&gt;"
+			},
+			{
+				"name":"constant.numeric.jce",
+				"match":"\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b"
+			},
+			{
+				"name":"entity.name.type.jce",
+				"match":"\\b([A-Za-z][A-Za-z0-9]*)\\b\\s*(?=[{(])"
+			},
+			{
+				"name":"constant.language.jce",
+				"match":"\\b([A-Za-z][A-Za-z0-9]*)\\b\\s*(?=(req|rsp))"
+			}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.jce",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.jce",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.jce"
+}
