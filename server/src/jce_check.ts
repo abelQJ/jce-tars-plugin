@@ -477,6 +477,7 @@ export default function JceCheck(jce: string) {
             }
         }
         else if (
+            token.type == TOKEN_VOID ||
             token.type == TOKEN_BOOL ||
             token.type == TOKEN_BYTE ||
             token.type == TOKEN_SHORT ||
