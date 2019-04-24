@@ -1,4 +1,7 @@
 {
+	"engines": {
+		"vscode": "0.10.x"
+	},
 	"name": "jce-plugin",
 	"description": "a plugin for jce file of taf framework.",
 	"author": "abelqjli",
