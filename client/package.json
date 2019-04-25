@@ -5,7 +5,7 @@
     "license": "MIT",
     "version": "1.1.0",
     "publisher": "abelqjli",
-    "icon": "icon.png",
+    "icon": "https://github.com/abelQJ/pic/blob/master/icon.png?raw=true",
     "repository": {},
     "engines": {
         "vscode": "^1.22.0"
