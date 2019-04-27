@@ -13,7 +13,7 @@ The jce/tars file is the communication interface between the client and the serv
 ## Contact 
 email:zglieren@126.com
 
-git:https://github.com/abelQJ/jce-tars-plugin/
+github:https://github.com/abelQJ/jce-tars-plugin/
 
 
 ## Plugin ScreenShots
