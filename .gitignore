@@ -3,3 +3,4 @@ client/server
 client/out
 client/node_modules
 server/node_modules
+server/out
