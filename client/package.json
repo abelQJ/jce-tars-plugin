@@ -1,83 +1,21 @@
 {
-    "name": "jce-plugin",
-    "description": "A plugin for jce file of TAF framework.",
-    "author": "abelqjli",
-    "license": "MIT",
-    "version": "1.1.0",
-    "publisher": "abelqjli",
-    "icon": "icon.png",
-    "engines": {
-        "vscode": "^1.33.0"
-    },
- 
-    "activationEvents": [
-        "onLanguage:jce"
-    ],
-    "main": "./out/src/extension",
-    "categories": [
-        "Programming Languages",
-        "Snippets",
-        "Other"
-    ],
-    "keywords": [
-        "jce",
-        "taf",
-        "tars",
-        "pb",
-        "tencent"
-    ],
-    "homepage": "https://github.com/abelQJ/jce-tars-plugin",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/abelQJ/jce-tars-plugin.git"
-    },
-    "bugs": {
-        "url": "https://github.com/abelQJ/jce-tars-plugin/issues"
-    },
-
-
-    "contributes": {
-        "configuration": {
-            "type": "object",
-            "title": "jce-plugin configuration",
-            "properties": {
-                "jce.check_grammar": {
-                    "scope": "resource",
-                    "type": "boolean",
-                    "default": true,
-                    "description": "Controls the jce grammar check."
-                }
-            }
-        },
-        "languages": [
-            {
-                "id": "jce",
-                "aliases": [
-                    "jce","tars"
-                ],
-                "extensions": [
-                    ".jce",".tars"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "jce",
-                "scopeName": "source.jce",
-                "path": "./syntaxes/jce.tmLanguage.json"
-            }
-        ],
-        "scripts": {
-            "vscode:prepublish": "tsc -p ./",
-            "compile": "tsc -p ./",
-            "watch": "tsc -w -p ./",
-            "update-vscode": "node ./node_modules/vscode/bin/install",
-            "postinstall": "node ./node_modules/vscode/bin/install"
-        }
-    },
-    "devDependencies": {
-        "vscode": "^1.1.18",
-        "vscode-languageclient": "^4.1.4"
-    }
+	"name": "jce-plugin",
+	"description": "A plugin for jce file of TAF framework.",
+	"author": "abelqjli",
+	"license": "MIT",
+	"version": "3.0.2",
+	"publisher": "abelqjli",
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"scripts": {
+		"update-vscode": "vscode-install",
+		"postinstall": "vscode-install"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^4.1.4"
+	},
+	"devDependencies": {
+		"vscode": "^1.1.30"
+	}
 }
